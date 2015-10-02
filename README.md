@@ -11,7 +11,7 @@ Developer issue management is by the Jira Edgar Renderer project: https://arelle
 
 ====
 
-This plugin branch was branched from the SEC-contributed master by Mark V Systems, and can be loaded as a plugin to Arelle in the normal manner.  E.g., if running from command line, --plugins  {path to here}/EdgarRenderer
+This plugin branch was branched from the SEC-contributed branch 3.2.0.727 by Mark V Systems, and can be loaded as a plugin to Arelle in the normal manner.  E.g., if running from command line, --plugins  {path to here}/EdgarRenderer
 
 To debug under eclipse, check this project out under arelle's plugin directory or soft link from EdgarRenderer to the Arelle project src/arelle/plugin directory, e.g., under MacOS/Linux:
     ln -s {path to here}/EdgarRenderer {path to arelle project}/src/arelle/plugin
