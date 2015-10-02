@@ -34,7 +34,7 @@ class RefManager(object):
     def getUrls(self,modelXbrl): 
         urls = set()
         from urllib.parse import urlparse,urljoin
-        namespacesInFacts = {f.qname.namespaceURI for f in modelXbrl.facts}
+        namespacesInFacts = {f.qname.namespaceURI for f in modelXbrl.facts if f.qname is not None}
         for fileUri,doc in modelXbrl.urlDocs.items():
             if doc.targetNamespace in namespacesInFacts:
                 parsedUri = urlparse(fileUri)
@@ -47,21 +47,18 @@ class RefManager(object):
         return urls
 
     def loadAddedUrls(self,modelXbrl,controller):
-        mustClear = False
-        urls = self.getUrls(modelXbrl)
-        for url in urls:
-            doc = None
-            try: # isDiscovered is needed here to force the load.
-                doc = arelle.ModelDocument.load(modelXbrl,url,isDiscovered=True) 
-            except (arelle.ModelDocument.LoadingException):
-                pass
-            if doc is None:
-                #message = ErrorMgr.getError('UNABLE_TO_LOAD_ADDON_LINKBASE')
-                controller.logWarn("Unable to load add-on linkbase {}.".format(url))
-            else:
-                mustClear = True
-        if mustClear:
-            # Code comment in Arelle's own loader says this is necessary but I don't think it is.
-            # modelXbrl.relationshipSets.clear() 
-            pass
+        validateDisclosureSystem = modelXbrl.modelManager.validateDisclosureSystem
+        try:
+            modelXbrl.modelManager.validateDisclosureSystem = False
+            for url in self.getUrls(modelXbrl):
+                doc = None
+                try: # isDiscovered is needed here to force the load.
+                    doc = arelle.ModelDocument.load(modelXbrl,url,isDiscovered=True) 
+                except (arelle.ModelDocument.LoadingException):
+                    pass
+                if doc is None:
+                    #message = ErrorMgr.getError('UNABLE_TO_LOAD_ADDON_LINKBASE')
+                    controller.logWarn("Unable to load add-on linkbase {}.".format(url))
+        finally:
+            modelXbrl.modelManager.validateDisclosureSystem = validateDisclosureSystem
         return
