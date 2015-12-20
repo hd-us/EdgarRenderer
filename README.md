@@ -11,6 +11,6 @@ End user support is by e-mail direct to SEC at: StructuredData@sec.gov
 
 Developer issue management is by the Jira Edgar Renderer project: https://arelle.atlassian.net/projects/ER
 
-This is the 3.3.0.814 branch, as contributed by SEC.  It is in production use as validator since 9/14/2015 and as renderer since 9/28/2015.  The plugin branch, https://github.com/Arelle/EdgarRenderer/tree/plugin.3.3.0.814, 
+This is the 3.3.0.814 branch, as contributed by SEC.  It had been in production use as validator from 9/14/2015 to 12/11/2015 and as renderer from 9/28/2015 to 12/8/2015.  The plugin branch, https://github.com/Arelle/EdgarRenderer/tree/plugin.3.3.0.814, 
 reconfigures SEC's EdgarRenderer as a dynamically installable Arelle plugin.  The plugin provides EdgarRenderer features to existing integrated usage of Arelle by a command 
 line interface, by java and c# interface and by RESTful server interface.
