@@ -313,183 +313,183 @@ var FiltersValue = {
             break;
           }
           case 'date-day-monthname-bg' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthbg(elementToFormat));
+            return FiltersDate.datedaymonthbg(elementToFormat);
             break;
           }
           case 'date-day-monthname-cs' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthcs(elementToFormat));
+            return FiltersDate.datedaymonthcs(elementToFormat);
             break;
           }
           case 'date-day-monthname-da' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthdk(elementToFormat));
+            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.dateDayMonthDK(elementToFormat));
             break;
           }
           case 'date-day-monthname-de' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthde(elementToFormat));
+            return FiltersDate.datedaymonthde(elementToFormat);
             break;
           }
           case 'date-day-monthname-el' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthel(elementToFormat));
+            return FiltersDate.datedaymonthel(elementToFormat);
             break;
           }
           case 'date-day-monthname-en' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthen(elementToFormat));
+            return FiltersDate.datedaymonthen(elementToFormat);
             break;
           }
           case 'date-day-monthname-es' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthes(elementToFormat));
+            return FiltersDate.datedaymonthes(elementToFormat);
             break;
           }
           case 'date-day-monthname-et' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthet(elementToFormat));
+            return FiltersDate.datedaymonthet(elementToFormat);
             break;
           }
           case 'date-day-monthname-fi' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthfi(elementToFormat));
+            return FiltersDate.datedaymonthfi(elementToFormat);
             break;
           }
           case 'date-day-monthname-fr' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthfr(elementToFormat));
+            return FiltersDate.datedaymonthfr(elementToFormat);
             break;
           }
           case 'date-day-monthname-hr' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthhr(elementToFormat));
+            return FiltersDate.datedaymonthhr(elementToFormat);
             break;
           }
           case 'date-day-monthname-it' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthit(elementToFormat));
+            return FiltersDate.datedaymonthit(elementToFormat);
             break;
           }
           case 'date-day-monthname-lv' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthlv(elementToFormat));
+            return FiltersDate.datedaymonthlv(elementToFormat);
             break;
           }
           case 'date-day-monthname-nl' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthnl(elementToFormat));
+            return FiltersDate.datedaymonthnl(elementToFormat);
             break;
           }
           case 'date-day-monthname-no' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthno(elementToFormat));
+            return FiltersDate.datedaymonthno(elementToFormat);
             break;
           }
           case 'date-day-monthname-pl' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthpl(elementToFormat));
+            return FiltersDate.datedaymonthpl(elementToFormat);
             break;
           }
           case 'date-day-monthname-pt' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthpt(elementToFormat));
+            return FiltersDate.datedaymonthpt(elementToFormat);
             break;
           }
           case 'date-day-monthname-ro' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthro(elementToFormat));
+            return FiltersDate.datedaymonthro(elementToFormat);
             break;
           }
           case 'date-day-monthname-sk' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthsk(elementToFormat));
+            return FiltersDate.datedaymonthsk(elementToFormat);
             break;
           }
           case 'date-day-monthname-sl' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthsl(elementToFormat));
+            return FiltersDate.datedaymonthsl(elementToFormat);
             break;
           }
           case 'date-day-monthname-sv' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthdk(elementToFormat));
+            return FiltersDate.datedaymonthdk(elementToFormat);
             break;
           }
           case 'date-day-monthroman' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthroman(elementToFormat));
+            return FiltersDate.datedaymonthroman(elementToFormat);
             break;
           }
           case 'date-day-month-year' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearTR4(elementToFormat));
+            return FiltersDate.datedaymonthyearTR4(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-bg' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearbg(elementToFormat));
+            return FiltersDate.datedaymonthyearbg(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-cs' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearcs(elementToFormat));
+            return FiltersDate.datedaymonthyearcs(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-da' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.dateDayMonthYearDK(elementToFormat));
+            return FiltersDate.dateDayMonthYearDK(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-de' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearde(elementToFormat));
+            return FiltersDate.datedaymonthyearde(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-el' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearel(elementToFormat));
+            return FiltersDate.datedaymonthyearel(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-en' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearen(elementToFormat));
+            return FiltersDate.datedaymonthyearen(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-es' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyeares(elementToFormat));
+            return FiltersDate.datedaymonthyeares(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-et' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearet(elementToFormat));
+            return FiltersDate.datedaymonthyearet(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-fi' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearfi(elementToFormat));
+            return FiltersDate.datedaymonthyearfi(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-fr' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearfr(elementToFormat));
+            return FiltersDate.datedaymonthyearfr(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-hi' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearinTR4(elementToFormat));
+            return FiltersDate.datedaymonthyearinTR4(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-hr' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearhr(elementToFormat));
+            return FiltersDate.datedaymonthyearhr(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-it' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearit(elementToFormat));
+            return FiltersDate.datedaymonthyearit(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-nl' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearnl(elementToFormat));
+            return FiltersDate.datedaymonthyearnl(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-no' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearno(elementToFormat));
+            return FiltersDate.datedaymonthyearno(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-pl' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearpl(elementToFormat));
+            return FiltersDate.datedaymonthyearpl(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-pt' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearpt(elementToFormat));
+            return FiltersDate.datedaymonthyearpt(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-ro' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearro(elementToFormat));
+            return FiltersDate.datedaymonthyearro(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-sk' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearsk(elementToFormat));
+            return FiltersDate.datedaymonthyearsk(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-sl' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearsl(elementToFormat));
+            return FiltersDate.datedaymonthyearsl(elementToFormat);
             break;
           }
           case 'date-day-monthname-year-sv' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyeardk(elementToFormat));
+            return FiltersDate.dateDayMonthYearDK(elementToFormat);
             break;
           }
           case 'date-day-monthroman-year' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datedaymonthyearroman(elementToFormat));
+            return FiltersDate.datedaymonthyearroman(elementToFormat);
             break;
           }
           case 'date-ind-day-monthname-year-hi' : {
@@ -509,11 +509,11 @@ var FiltersValue = {
             break;
           }
           case 'date-monthname-day-hu' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datemonthdayhu(elementToFormat));
+            return FiltersDate.datemonthdayhu(elementToFormat);
             break;
           }
           case 'date-monthname-day-lt' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datemonthdaylt(elementToFormat));
+            return FiltersDate.datemonthdaylt(elementToFormat);
             break;
           }
           case 'date-monthname-day-year-en' : {
@@ -541,7 +541,7 @@ var FiltersValue = {
             break;
           }
           case 'date-monthname-year-da' : {
-            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.datemonthyeardk(elementToFormat));
+            return FiltersNumber.numberFormatting(elementToFormat, FiltersDate.dateMonthYearDK(elementToFormat));
             break;
           }
           case 'date-monthname-year-de' : {
