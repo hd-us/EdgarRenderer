@@ -946,7 +946,8 @@ class EdgarRenderer(Cntlr.Cntlr):
                                                        accessionNumber="'{}'".format(getattr(filing, "accessionNumber", "")),
                                                        resourcesFolder="'{}'".format(self.resourcesFolder.replace("\\","/")),
                                                        processXsltInBrowser=etree.XSLT.strparam(str(self.processXsltInBrowser).lower()),
-                                                       includeLogs=etree.XSLT.strparam(str(_includeLogs).lower()))
+                                                       includeLogs=etree.XSLT.strparam(str(_includeLogs).lower()),
+                                                       includeExcel=etree.XSLT.strparam("true" if (self.excelXslt) else "false"))
                             IoManager.writeHtmlDoc(filing, result, self.reportZip, _reportsFolder, "FilingSummary.htm")
                         self.logDebug("FilingSummary XSLT transform {:.3f} secs.".format(time.time() - _startedAt))
                         self.renderedFiles.add("FilingSummary.htm")
