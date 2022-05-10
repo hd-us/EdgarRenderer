@@ -22,7 +22,7 @@ limitations under the License.
 Edgar™ is a registered trademark of the U.S. Securities and Exchange Commission.
 
 ---
-Arelle includes a number of subcomponents with separate copyright notices
+EdgarRenderer and its operation on the Arelle infrastructure include a number of subcomponents with separate copyright notices
 and/or license terms. Your use of the source code for these subcomponents
 is subject to the terms and conditions of the following licenses:
 
