@@ -374,7 +374,7 @@ var App_RemoteDocs = {
     
     if ( regexReturnsFalseIfRelativeUrl.test(query) ) {
       {
-        if ( query.startsWith(window.location.origin) ) {
+        if ( window.location.hostname === ( 'dev-ixviewer.hdata.us' || 'staging-ixviewer.hdata.us' || 'ixviewer.hdata.us' ) ) {
           // these url's are "safe and from the same origin" and
           // allowed to proceed with the iframe
         } else {
