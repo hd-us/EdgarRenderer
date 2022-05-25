@@ -370,28 +370,7 @@ var App_RemoteDocs = {
     var xbrlStr = queryAry['xbrl'];
     // var docPath = "../documents/"+query;
     var docPath = query;
-    var regexReturnsFalseIfRelativeUrl = new RegExp('^(?:[a-z]+:)?//', 'i');
-    
-    if ( regexReturnsFalseIfRelativeUrl.test(query) ) {
-      {
-        if ( window.location.hostname === ( 'dev-ixviewer.hdata.us' || 'staging-ixviewer.hdata.us' || 'ixviewer.hdata.us' ) ) {
-          // these url's are "safe and from the same origin" and
-          // allowed to proceed with the iframe
-        } else {
-          $('#app-inline-xbrl-doc').remove();
-          $('.fixedMenuBar').remove();
-          $('.toolbarSpinner').remove();
-          App.showMessage('The protocol, host name and port number of the \'doc\' field (' + query
-              + '), if provided, must be identical to that of the Inline XBRL viewer(' + window.location.origin + ')');
-          App.hideLoadingDialog();
-          throw new CustomCORSError(null, window.location.origin, query);
-        }
-      }
-      docPath = query;
-    } else {
-      // relative url, allowed to pass
-      docPath = query;
-    }
+    docPath = query;
     query = URI(query);
     var docBasePath = query.filename();
     App.frame = $('#app-inline-xbrl-doc');
