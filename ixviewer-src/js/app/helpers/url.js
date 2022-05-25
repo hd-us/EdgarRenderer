@@ -163,14 +163,6 @@ var HelpersUrl = {
     }
     
     var url = new ParsedUrl(window.location.href);
-    // here we check for cors
-    var tempUrl = new ParsedUrl(url.search.substring(1).replace(/doc=|file=/, ''));
-    var tempUrlHost = tempUrl.protocol + '//' + tempUrl.host;
-    var host = url.protocol + '//' + url.host;
-    if ( tempUrlHost !== host ) {
-      ErrorsMajor.cors(tempUrl);
-      return false;
-    }
     
     HelpersUrl.fullURL = url.href;
     // we are going to set all of the URL Params as a simple object
