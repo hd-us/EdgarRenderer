@@ -228,6 +228,10 @@ nav.navbar .navbar-nav > li > a.text-danger {
   font-size:.9em;
 }
 
+#nav-filter-tags-list-item, #header-sections-link, #form-information-instance, #form-information-zip {
+  display: none;
+}
+
 /* Sidebars */
 
 .left-sidenav, .right-sidenav {

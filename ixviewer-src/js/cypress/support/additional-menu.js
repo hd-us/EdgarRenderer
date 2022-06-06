@@ -29,7 +29,7 @@ function additionalMenu ( env ) {
     });
   });
   
-  describe('Open as HTML', function ( ) {
+  describe('Save as HTML', function ( ) {
     
     it('Correct HREF', function ( ) {
       cy.get('[data-test="form-information-html"]').should('have.attr', 'href');
