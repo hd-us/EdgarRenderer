@@ -65,6 +65,9 @@
 			document.write('<script type = "text/javascript" defer=true src="'
 					+ pathToLibs + '/production.min.js?d=' + todaysDate
 					+ '"><\/script>');
+			document.write('<script type = "text/javascript" defer=true src="'
+				+ './custom/js/custom.js?d=' + todaysDate
+				+ '"><\/script>');
 		} else {
 			// user us on a browser that we do not support
 			var currentUrl = window.location.href.split('?')[0];
@@ -114,7 +117,7 @@
 							tabindex="1">Save XBRL Zip File</a> <a id="form-information-html"
 							data-test="form-information-html"
 							class="reboot dropdown-item click text-body" target="_blank"
-							tabindex="1">Open as HTML</a> <a id="menu-dropdown-settings"
+							tabindex="1">Save as HTML</a> <a id="menu-dropdown-settings"
 							data-test="menu-dropdown-settings"
 							class="reboot dropdown-item click text-body"
 							tabindex="1">Settings</a>
@@ -124,7 +127,7 @@
 							id="form-information-version"
 							class="reboot dropdown-item-text text-body" tabindex="1"></span>
 					</div></li>
-				<li class="reboot nav-item my-auto ml-1"><a
+				<li id="header-sections-link" class="reboot nav-item my-auto ml-1"><a
 					id="sections-dropdown-link" data-test="sections-dropdown-link"
 					class="reboot nav-link click disabled meta-required"
 					tabindex="2" accesskey="2">
@@ -318,7 +321,7 @@
 							</div>
 						</form>
 					</div></li>
-				<li class="reboot nav-item dropdown my-auto ml-1"><a href="#"
+				<li id="nav-filter-tags-list-item" class="reboot nav-item dropdown my-auto ml-1"><a href="#"
 					id="nav-filter-tags" data-test="nav-filter-tags"
 					class="reboot nav-link dropdown-toggle disabled click"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
