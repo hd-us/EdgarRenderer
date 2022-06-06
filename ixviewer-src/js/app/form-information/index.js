@@ -11,8 +11,8 @@ var FormInformation = {
     if ( event.type === 'keyup' && (event.keyCode === 13 || event.keyCode === 32) ) {
       $(element).dropdown('toggle');
     }
-    FormInformation.xbrlInstance();
-    FormInformation.xbrlZip();
+    // FormInformation.xbrlInstance();
+    // FormInformation.xbrlZip();
     FormInformation.xbrlHtml();
     FormInformation.version();
   },
