@@ -228,7 +228,7 @@ nav.navbar .navbar-nav > li > a.text-danger {
   font-size:.9em;
 }
 
-#nav-filter-tags-list-item, #header-sections-link, #form-information-instance, #form-information-zip {
+#nav-filter-tags-list-item, #form-information-instance, #form-information-zip {
   display: none;
 }
 
@@ -296,11 +296,12 @@ nav.navbar .navbar-nav > li > a.text-danger {
   margin-bottom: 0px;
 }
 
-#taxonomies-menu-list-pagination a.list-group-item .w-100 {
-  position:absolute;
-  z-index: 1;
-  top: 5px;
-  right: 5px;
+.tooltip {
+  opacity: 1;
+}
+
+.sch-title {
+  text-align: left!important;
 }
 
 #taxonomies-menu-list-pagination a.list-group-item p.mb-1 {
