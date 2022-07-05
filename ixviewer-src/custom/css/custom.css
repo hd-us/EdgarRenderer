@@ -347,12 +347,13 @@ nav.navbar .navbar-nav > li > a.text-danger {
   position: relative;
   overflow-y: auto;
   bottom: 0;
-  height: 100%;
+  height: calc(100% - 106px);
 }
 
 .dialog-box {
   border: 2px solid #1C2F3D;
   box-shadow: 0px 0px 12px 3px rgb(0 0 0 / 6%);
+  overflow: hidden
 }
 
 .carousel-indicators {
@@ -397,6 +398,10 @@ nav.navbar .navbar-nav > li > a.text-danger {
 
 #taxonomy-modal-title {
   font-weight: 500;
+}
+
+.table tr {
+  width: 100%;
 }
 
 /* XBRL Main Area */
