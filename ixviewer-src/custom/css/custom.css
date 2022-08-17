@@ -232,6 +232,40 @@ nav.navbar .navbar-nav > li > a.text-danger {
   display: none;
 }
 
+#global-search {
+  padding: 0.375rem 2.5rem 0.375rem 0.75rem;
+  border: 1px solid #fff;
+}
+
+#global-search:focus {
+  border: 1px solid #fff;
+  box-shadow: none;
+}
+
+#search-btn-clear {
+  display: none;
+  position: absolute;
+  left: -39px;
+  top: 0;
+  z-index: 4;
+  background-color: #fff;
+  color: #1C2F3D;
+  border: 1px solid transparent;
+}
+
+#search-btn-clear:hover {
+  background-color: #fff;
+  color: #1C2F3D;
+}
+
+#search-btn-clear.show-icon {
+  display: block;
+}
+
+.input-group-append {
+  position: relative;
+}
+
 /* Sidebars */
 
 .left-sidenav, .right-sidenav {

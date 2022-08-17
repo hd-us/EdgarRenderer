@@ -1,12 +1,18 @@
-// //Remove links from Menu link.  Also needed to comment out functions in /ix-viewer-src/js/app/form-information for removal.
-// const saveXbrlInstance = document.getElementById('form-information-instance');
-// const saveXbrlAsZip = document.getElementById('form-information-zip');
-// saveXbrlInstance.remove();
-// saveXbrlAsZip.remove();
+const searchInput = document.getElementById('global-search');
+const searchIcon = document.getElementById('search-btn-clear');
 
-// //Removes the unnecessary "Sections" text in the header
-// const mainNavbar = document.getElementById('header-sections-link');
-// mainNavbar.remove();
+function showHideSearchCancelIcon(e) {
+  console.log(e.target.value);
+  if (e.target.value && e.target.value.length) {
+    searchIcon.classList.add("show-icon");
+  } else{
+    searchIcon.classList.remove("show-icon");
+  }
+}
 
-// // const headerFilter = document.getElementById('nav-filter-tags-list-item');
-// // headerFilter.remove();
+function hideSearchCancelIcon() {
+  searchIcon.classList.remove("show-icon");
+}
+
+searchInput.addEventListener('keyup', showHideSearchCancelIcon);
+searchIcon.addEventListener('click', hideSearchCancelIcon);
