@@ -9,6 +9,10 @@ body {
   font-family: "Poppins", Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.hide-element {
+  display: none!important;
+}
+
 .bg-sec {
   background-color: #1C2F3D;
 }
