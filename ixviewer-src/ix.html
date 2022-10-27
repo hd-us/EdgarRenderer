@@ -725,6 +725,52 @@
 						<div class="reboot list-group list-group-flush"></div>
 					</div>
 				</div>
+
+				<div class="reboot card" id="tagged-sections-4"
+					data-test="tagged-sections-4">
+					<div class="reboot card-header px-0 py-0">
+						<h5 class="reboot mb-0">
+							<button
+								class="reboot btn btn-link d-flex justify-content-between align-items-center w-100"
+								type="button" data-target="#collapseProspectus">
+								<span class="reboot font-size-1">Prospectus</span>
+								<span id="collapseProspectusBadge"
+									class="reboot badge badge-secondary">
+									<i class="reboot fas fa-spinner fa-spin"></i>
+
+								</span>
+							</button>
+						</h5>
+					</div>
+					<div id="collapseProspectus" class="reboot collapse"
+						data-parent="#tagged-sections">
+						<!-- Below is populated dynamically VIA JS -->
+						<div class="reboot list-group list-group-flush"></div>
+					</div>
+				</div>
+
+				<div class="reboot card" id="tagged-sections-5"
+					data-test="tagged-sections-5">
+					<div class="reboot card-header px-0 py-0">
+						<h5 class="reboot mb-0">
+							<button
+								class="reboot btn btn-link d-flex justify-content-between align-items-center w-100"
+								type="button" data-target="#collapseFeeExhibit">
+								<span class="reboot font-size-1">RR Summaries</span>
+								<span id="collapseFeeExhibitBadge"
+									class="reboot badge badge-secondary">
+									<i class="reboot fas fa-spinner fa-spin"></i>
+
+								</span>
+							</button>
+						</h5>
+					</div>
+					<div id="collapseFeeExhibit" class="reboot collapse"
+						data-parent="#tagged-sections">
+						<!-- Below is populated dynamically VIA JS -->
+						<div class="reboot list-group list-group-flush"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -807,8 +853,8 @@
 					</div>
 					<div id="help-search" class="reboot collapse"
 						data-parent="#help-sections">
-						<p class="reboot m-2">There are two ways to search the
-							document: FACTS AND SECTIONS. To search information, enter a
+						<p class="reboot m-2"><span class="hide-element">There are two ways to search the
+							document: FACTS AND SECTIONS. </span>To search information, enter a
 							keyword in a search box and select the magnifying glass icon to
 							return matching results. Search operators "and" (via "AND" or
 							"&") and "or" (via "OR" or "|") are available to further refine a
@@ -828,10 +874,10 @@
 							references by selecting the cog / wheel icon to the left of the
 							search box. See Settings for more information.</p>
 						
-						<p class="reboot m-2">
+						<p class="reboot m-2 hide-element hide-element">
 							<strong>SECTIONS</strong>
 						</p>
-						<p class="reboot m-2">The Search Sections box can be used to
+						<p class="reboot m-2 hide-element">The Search Sections box can be used to
 							filter the tagged sections of the financial statements.</p>
 					</div>
 				</div>
@@ -940,7 +986,7 @@
 							fact is tagged with dimensional information.</p>
 					</div>
 				</div>
-				<div class="reboot card">
+				<div class="reboot card hide-element">
 					<div class="reboot card-header px-0 py-0">
 						<h5 class="reboot mb-0">
 							<button
@@ -998,17 +1044,17 @@
 								that's been tagged but potentially does not have a corresponding
 								location in the HTML</li>
 						</ul>
-						<p class="reboot m-2">
+						<p class="reboot m-2 hide-element">
 							<strong>Save XBRL Instance</strong>
 						</p>
-						<p class="reboot m-2">The Save XBRL Instance menu item allows
+						<p class="reboot m-2 hide-element">The Save XBRL Instance menu item allows
 							an XBRL instance document (*.xml) that is extracted from the
 							Inline document to be saved locally for use by software
 							supporting the XBRL format.</p>
-						<p class="reboot m-2">
+						<p class="reboot m-2 hide-element">
 							<strong>Save XBRL Zip</strong>
 						</p>
-						<p class="reboot m-2">The Save XBRL Zip menu item allows a zip
+						<p class="reboot m-2 hide-element">The Save XBRL Zip menu item allows a zip
 							file (*.zip) that contains the as-provided XBRL instance document
 							and related custom taxonomy files to be saved locally.</p>
 						<p class="reboot m-2">
