@@ -50,7 +50,8 @@ var FormInformation = {
   xbrlHtml : function( ) {
     
     document.getElementById('form-information-html').setAttribute('href', HelpersUrl.getExternalFile);
-    
+    var file = HelpersUrl.getExternalFile.substr(0, HelpersUrl.getExternalFile.lastIndexOf(".")) + ".pdf";
+    document.getElementById('form-information-pdf').setAttribute('href', file);
   },
   
   version : function( ) {
