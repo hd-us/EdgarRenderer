@@ -12,7 +12,7 @@ const concat = require('gulp-concat');
 const rename = require('gulp-rename');
 const order = require('gulp-order');
 const header = require('gulp-header');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const csso = require('gulp-csso');
 
 const jsFiles = ['../js/app/**/*.js', '!../js/production.js', '!../js/production.min.js'];
@@ -96,12 +96,3 @@ gulp.task('clean', (callback) => {
 gulp.task('default', gulp.series('sass', 'lint', 'production', 'clean'), (done) => {
   console.log("continue");
 });
-
-
-
-
-
-
-
-
-
