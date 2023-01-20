@@ -36,6 +36,14 @@ function additionalMenu ( env ) {
       cy.get('[data-test="form-information-html"]').should('have.attr', 'href').and('be', Cypress.env()[env]['html']);
     });
   });
+
+  describe('Save as PDF', function ( ) {
+    
+    it('Correct HREF', function ( ) {
+      cy.get('[data-test="form-information-pdf"]').should('have.attr', 'href');
+      cy.get('[data-test="form-information-pdf"]').should('have.attr', 'href').and('be', Cypress.env()[env]['pdf']);
+    });
+  });
   
   describe('Settings', function ( ) {
     
