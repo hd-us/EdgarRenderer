@@ -33,39 +33,39 @@ var ErrorsMinor = {
   },
   
   browserSuggestion : function( ) {
-    if ( !Constants.getBrowserType['chrome'] ) {
-      var contentStart = document.createTextNode('Using ');
+    // if ( !Constants.getBrowserType['chrome'] ) {
+    //   var contentStart = document.createTextNode('Using ');
       
-      var element = document.createElement('div');
-      element.setAttribute('class', 'reboot alert-height alert alert-warning alert-dismissable show mb-0');
-      element.appendChild(contentStart);
+    //   var element = document.createElement('div');
+    //   element.setAttribute('class', 'reboot alert-height alert alert-warning alert-dismissable show mb-0');
+    //   element.appendChild(contentStart);
       
-      var linkContent = document.createTextNode('Google Chrome');
-      var link = document.createElement('a');
-      link.setAttribute('class', 'reboot');
-      link.setAttribute('target', '_blank');
-      link.setAttribute('href', 'https://www.google.com/chrome/');
-      link.appendChild(linkContent);
-      element.appendChild(link);
+    //   var linkContent = document.createTextNode('Google Chrome');
+    //   var link = document.createElement('a');
+    //   link.setAttribute('class', 'reboot');
+    //   link.setAttribute('target', '_blank');
+    //   link.setAttribute('href', 'https://www.google.com/chrome/');
+    //   link.appendChild(linkContent);
+    //   element.appendChild(link);
       
-      var contentEnd = document.createTextNode(' can help alleviate some of these performance issues.');
-      element.appendChild(contentEnd);
+    //   var contentEnd = document.createTextNode(' can help alleviate some of these performance issues.');
+    //   element.appendChild(contentEnd);
       
-      var buttonClose = document.createElement('i');
-      buttonClose.setAttribute('class', 'reboot fas fa-times');
-      var button = document.createElement('button');
-      button.setAttribute('type', 'button');
-      button.setAttribute('class', 'reboot close');
-      button.setAttribute('data-dismiss', 'alert');
-      button.addEventListener('click', function() { Errors.updateMainContainerHeight(true); });
-      button.appendChild(buttonClose);
+    //   var buttonClose = document.createElement('i');
+    //   buttonClose.setAttribute('class', 'reboot fas fa-times');
+    //   var button = document.createElement('button');
+    //   button.setAttribute('type', 'button');
+    //   button.setAttribute('class', 'reboot close');
+    //   button.setAttribute('data-dismiss', 'alert');
+    //   button.addEventListener('click', function() { Errors.updateMainContainerHeight(true); });
+    //   button.appendChild(buttonClose);
       
-      element.appendChild(button);
+    //   element.appendChild(button);
       
-      document.getElementById('error-container').appendChild(element);
+    //   document.getElementById('error-container').appendChild(element);
       
-      Errors.updateMainContainerHeight();
-    }
+    //   Errors.updateMainContainerHeight();
+    // }
   },
   
   factNotFound : function( ) {
@@ -119,30 +119,30 @@ var ErrorsMinor = {
   
   fileSize : function( ) {
     
-    var content = document.createTextNode('Inline XBRL HTML Form is over ' + Constants.fileSizeError[1]
-        + ', performance may be affected.');
+    // var content = document.createTextNode('Inline XBRL HTML Form is over ' + Constants.fileSizeError[1]
+    //     + ', performance may be affected.');
     
-    var element = document.createElement('div');
-    element.setAttribute('class', 'reboot alert-height alert alert-warning alert-dismissable show mb-0');
-    element.appendChild(content);
+    // var element = document.createElement('div');
+    // element.setAttribute('class', 'reboot alert-height alert alert-warning alert-dismissable show mb-0');
+    // element.appendChild(content);
     
-    var buttonClose = document.createElement('i');
-    buttonClose.setAttribute('class', 'reboot fas fa-times');
+    // var buttonClose = document.createElement('i');
+    // buttonClose.setAttribute('class', 'reboot fas fa-times');
     
-    var button = document.createElement('button');
-    button.setAttribute('type', 'button');
-    button.setAttribute('class', 'reboot close');
-    button.setAttribute('data-dismiss', 'alert');
-    button.addEventListener('click', function() { Errors.updateMainContainerHeight(true); });
+    // var button = document.createElement('button');
+    // button.setAttribute('type', 'button');
+    // button.setAttribute('class', 'reboot close');
+    // button.setAttribute('data-dismiss', 'alert');
+    // button.addEventListener('click', function() { Errors.updateMainContainerHeight(true); });
     
-    button.appendChild(buttonClose);
-    element.appendChild(button);
+    // button.appendChild(buttonClose);
+    // element.appendChild(button);
     
-    document.getElementById('error-container').appendChild(element);
+    // document.getElementById('error-container').appendChild(element);
     
-    Errors.updateMainContainerHeight();
+    // Errors.updateMainContainerHeight();
     
-    ErrorsMinor.browserSuggestion();
+    // ErrorsMinor.browserSuggestion();
   },
   
   metaLinksNotFound : function( fileName ) {
