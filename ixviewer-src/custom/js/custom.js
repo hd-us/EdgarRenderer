@@ -17,9 +17,7 @@ function hideSearchCancelIcon() {
 searchInput.addEventListener('keyup', showHideSearchCancelIcon);
 searchIcon.addEventListener('click', hideSearchCancelIcon);
 
-
-window.addEventListener('message', 
-(event) => {
+window.addEventListener('message', function(event) {
   console.log('i got some data!');
   console.log(event);
   if (

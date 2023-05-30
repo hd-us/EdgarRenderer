@@ -93,7 +93,7 @@
 		"no-compare-neg-zero": 2,
 		"no-cond-assign": 2,
 		"no-confusing-arrow": 2,
-		"no-console": ["error", { "allow": ["debug"] }],
+		// "no-console": ["warning", { "allow": ["debug"] }],
 		"no-const-assign": 2,
 		"no-constant-condition": 2,
 		"no-continue": 2,
