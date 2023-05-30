@@ -20,6 +20,8 @@ searchIcon.addEventListener('click', hideSearchCancelIcon);
 
 window.addEventListener('message', 
 (event) => {
+  console.log('i got some data!', data);
+  console.log(event);
   if (
     event.origin === "http://localhost:3000" ||
     event.origin === "https://dev-app.hdata.us" ||
