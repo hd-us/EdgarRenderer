@@ -25,7 +25,7 @@ window.addEventListener('message', function(event) {
   ) {
     if (event.data) {
       window.libraryId = vent.data.libraryId;
-      console.log(event.data.libraryId);
+      console.log("libraryId: ", event.data.libraryId);
     }
   };
 });
