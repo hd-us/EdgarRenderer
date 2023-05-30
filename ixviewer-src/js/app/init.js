@@ -15,6 +15,16 @@ var AppInit = {
 
     HelpersUrl.init(internalUrl, function (result) {
       if (result) {
+        window.addEventListener('message', ({ data, origin }) => {
+          if (
+            origin === "http://localhost:3000" ||
+            origin === "https://dev-app.hdata.us" ||
+            origin === "https://staging-app.hdata.us" ||
+            origin === "https://app.hdata.us"
+          ) {
+            console.log('i got some data!', data);
+          };
+        });
         AjaxForm.init(function (formLoaded) {
           if (formLoaded) {
             Images.updateLinks();
