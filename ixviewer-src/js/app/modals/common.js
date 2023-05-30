@@ -55,19 +55,6 @@ var ModalsCommon = {
 
     window.addEventListener("keyup", ModalsCommon.keyboardEvents);
 
-    window.addEventListener('message', function(event) {
-      console.log('i got some data!');
-      console.log(event);
-      if (
-        event.origin === "http://localhost:3000" ||
-        event.origin === "https://dev-app.hdata.us" ||
-        event.origin === "https://staging-app.hdata.us" ||
-        event.origin === "https://app.hdata.us"
-      ) {
-        console.log('i got some data!', event);
-      }
-    });
-
     $("#taxonomy-modal-carousel").on("slide.bs.carousel", function (event) {
       ModalsCommon.currentSlide = event["to"] + 1;
       var previousActiveIndicator = event["from"];
