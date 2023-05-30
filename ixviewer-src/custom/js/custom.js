@@ -16,3 +16,16 @@ function hideSearchCancelIcon() {
 
 searchInput.addEventListener('keyup', showHideSearchCancelIcon);
 searchIcon.addEventListener('click', hideSearchCancelIcon);
+
+
+window.addEventListener('message', 
+(event) => {
+  if (
+    event.origin === "http://localhost:3000" ||
+    event.origin === "https://dev-app.hdata.us" ||
+    event.origin === "https://staging-app.hdata.us" ||
+    event.origin === "https://app.hdata.us"
+  ) {
+    console.log('i got some data!', data);
+  };
+});
