@@ -24,7 +24,7 @@ window.addEventListener('message', function(event) {
     event.origin === "https://app.hdata.us"
   ) {
     if (event.data) {
-      window.libraryId = vent.data.libraryId;
+      window.libraryId = event.data.libraryId;
       console.log("libraryId: ", event.data.libraryId);
     }
   };
