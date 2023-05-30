@@ -20,7 +20,7 @@ searchIcon.addEventListener('click', hideSearchCancelIcon);
 
 window.addEventListener('message', 
 (event) => {
-  console.log('i got some data!', data);
+  console.log('i got some data!');
   console.log(event);
   if (
     event.origin === "http://localhost:3000" ||
@@ -28,6 +28,6 @@ window.addEventListener('message',
     event.origin === "https://staging-app.hdata.us" ||
     event.origin === "https://app.hdata.us"
   ) {
-    console.log('i got some data!', data);
+    console.log('i got some data!', event);
   };
 });
