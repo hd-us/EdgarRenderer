@@ -146,26 +146,26 @@ var ErrorsMinor = {
   },
   
   metaLinksNotFound : function( fileName ) {
-    var content = document
-        .createTextNode('Inline XBRL viewing features are minimal because no supporting file was found.');
+    // var content = document
+    //     .createTextNode('Inline XBRL viewing features are minimal because no supporting file was found.');
     
-    var element = document.createElement('div');
-    element.setAttribute('class', 'reboot alert-height alert alert-warning alert-dismissable show mb-0');
-    element.appendChild(content);
+    // var element = document.createElement('div');
+    // element.setAttribute('class', 'reboot alert-height alert alert-warning alert-dismissable show mb-0');
+    // element.appendChild(content);
     
-    var buttonClose = document.createElement('i');
-    buttonClose.setAttribute('class', 'reboot fas fa-times');
+    // var buttonClose = document.createElement('i');
+    // buttonClose.setAttribute('class', 'reboot fas fa-times');
     
-    var button = document.createElement('button');
-    button.setAttribute('type', 'button');
-    button.setAttribute('class', 'reboot close');
-    button.setAttribute('data-dismiss', 'alert');
-    button.addEventListener('click', function() { Errors.updateMainContainerHeight(true); });
+    // var button = document.createElement('button');
+    // button.setAttribute('type', 'button');
+    // button.setAttribute('class', 'reboot close');
+    // button.setAttribute('data-dismiss', 'alert');
+    // button.addEventListener('click', function() { Errors.updateMainContainerHeight(true); });
     
-    button.appendChild(buttonClose);
-    element.appendChild(button);
+    // button.appendChild(buttonClose);
+    // element.appendChild(button);
     
-    document.getElementById('error-container').appendChild(element);
+    // document.getElementById('error-container').appendChild(element);
     
     Errors.updateMainContainerHeight();
   },
